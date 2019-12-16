@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: status
 title: Ini Halaman Status
 permalink: /status/
 ---

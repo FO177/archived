@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<ul>
+    {% for b005a in site.data.b005as %}
+      <li>
+        <a href="./{{ b005a.kdstkr }}">
+            {{ b005a.kdstkr }} {{ b005a.nmstkr }}
+        </a>
+      </li>
+    {% endfor %}
+    </ul>

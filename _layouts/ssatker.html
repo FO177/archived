@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<table style: width="100%"; border="1">
+  <tr>
+    <th width="15%">No</th>
+    <th width="40%">Jenis Kegiatan</th>
+    <th width="25%">Batas Akhir</th>
+    <th width="20%">Status</th>
+  </tr>
+  <tr>
+    <td class="tengah">01</td>
+    <td>SPM Gaji Induk</td>
+    <td class="tengah">Tgl 1 s.d. 15</td>
+    <td class="tengah"> {% if page.sgaji == "Sudah" %}
+      <button class="btn green"><a href="../../blog">Sudah</a></button>  {% endif %}
+      {% if page.sgaji == "Belum" %}
+      <button class="btn yellow">Belum</a>  {% endif %}
+      {% if page.sgaji == "Telat" %}
+      <button class="btn Red">Telat</a>  {% endif %} </td>
+  </tr>
+  <tr>
+    <td class="tengah">02</td>
+    <td>SPM Penghasilan PPNPN</td>
+    <td class="tengah">Tgl 21 s.d. 26</td>
+    <td class="tengah"> {% if page.sppnpn == "Sudah" %}
+      <button class="btn green">Sudah</a>  {% endif %}
+      {% if page.sppnpn == "Belum" %}
+      <button class="btn yellow">Belum</a>  {% endif %}
+      {% if page.sppnpn == "Telat" %}
+      <button class="btn Red">Telat</a>  {% endif %} </td>
+  </tr>
+</table>

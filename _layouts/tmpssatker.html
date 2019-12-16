@@ -12,11 +12,12 @@ layout: default
     <td class="tengah">01</td>
     <td>SPM Gaji Induk PNS</td>
     <td class="tengah">Tgl 1 s.d. 15</td>
-    <td class="tengah">
-      {% if page.sGJIND == "SUDAH" %} <button>SUDAH</button>  {% endif %}
-      {% if page.sGJIND == "BELUM" %} <button>BELUM</button>  {% endif %}
-      {% if page.sGJIND == "TELAT" %} <button>TELAT</button>  {% endif %}
-      {% if page.sGJIND == "TIDAK" %} <button>TIDAK</button>  {% endif %}
+    <td class="tengah"> {% if page.sGJIND == "Sudah" %}
+      <button class="btn green"><a href="../../blog">Sudah</a></button>  {% endif %}
+      {% if page.sgaji == "Belum" %}
+      <button class="btn yellow">Belum</a>  {% endif %}
+      {% if page.sgaji == "Telat" %}
+      <button class="btn Red">Telat</a>  {% endif %} </td>
   </tr>
   <tr>
     <td class="tengah">02</td>
@@ -74,5 +75,3 @@ layout: default
       <button class="btn Red">Telat</a>  {% endif %} </td>
   </tr>
 </table>
-
-{{ content }}

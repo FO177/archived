@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#71c9ce">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>{{ site.title }} - {{ page.title }}</title>
+    {% feed_meta %}
+    {% seo %}
+  </head>
+  <body>
+    {% include header.html %}
+    {% include nav.html %}
+
+    <main>
+    {{ content }}
+    </main>
+    
+    {% include footer.html %}
+  
+  </body>
+</html>

@@ -31,6 +31,20 @@ theme: minima
 plugins:
   - jekyll-feed
 
+# Navigation
+show_nav: true
+menu0: /
+menu1: /status
+menu2: /tulisan
+menu3: /download
+show_downloads: true
+
+
+dev: Juscabe
+devsite: https://github.com/juscabe
+css: Lit CSS
+csssite: https://github.com/ajusa/lit
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

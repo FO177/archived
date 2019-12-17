@@ -1,78 +1,85 @@
 ---
 layout: default
 ---
-<table style: width="100%"; border="1">
-  <tr>
-    <th width="15%">No</th>
-    <th width="40%">Jenis Kegiatan</th>
-    <th width="25%">Batas Akhir</th>
-    <th width="20%">Status</th>
-  </tr>
-  <tr>
-    <td class="tengah">01</td>
-    <td>SPM Gaji Induk PNS</td>
-    <td class="tengah">Tgl 1 s.d. 15</td>
-    <td class="tengah">
-      {% if page.sGJIND == "SUDAH" %} <button>SUDAH</button>  {% endif %}
-      {% if page.sGJIND == "BELUM" %} <button>BELUM</button>  {% endif %}
-      {% if page.sGJIND == "TELAT" %} <button>TELAT</button>  {% endif %}
-      {% if page.sGJIND == "TIDAK" %} <button>TIDAK</button>  {% endif %}
-  </tr>
-  <tr>
-    <td class="tengah">02</td>
-    <td>SPM Penghasilan PPNPN</td>
-    <td class="tengah">Tgl 21 s.d. 26</td>
-    <td class="tengah"> {% if page.sPPNPN == "Sudah" %}
-      <button class="btn green">Sudah</a>  {% endif %}
-      {% if page.sppnpn == "Belum" %}
-      <button class="btn yellow">Belum</a>  {% endif %}
-      {% if page.sppnpn == "Telat" %}
-      <button class="btn Red">Telat</a>  {% endif %} </td>
-  </tr>
-  <tr>
-    <td class="tengah">03</td>
-    <td>Laporan Saldo Rekening</td>
-    <td class="tengah">Tgl 21 s.d. 26</td>
-    <td class="tengah"> {% if page.sLSREK == "Sudah" %}
-      <button class="btn green">Sudah</a>  {% endif %}
-      {% if page.sppnpn == "Belum" %}
-      <button class="btn yellow">Belum</a>  {% endif %}
-      {% if page.sppnpn == "Telat" %}
-      <button class="btn Red">Telat</a>  {% endif %} </td>
-  </tr>
-  <tr>
-    <td class="tengah">04</td>
-    <td>LPJ Bendahara Pengeluaran</td>
-    <td class="tengah">Tgl 21 s.d. 26</td>
-    <td class="tengah"> {% if page.sLPJBD == "Sudah" %}
-      <button class="btn green">Sudah</a>  {% endif %}
-      {% if page.sLPJBD == "Belum" %}
-      <button class="btn yellow">Belum</a>  {% endif %}
-      {% if page.sLPJBD == "Telat" %}
-      <button class="btn Red">Telat</a>  {% endif %} </td>
-  </tr>
-  <tr>
-    <td class="tengah">05</td>
-    <td>LPJ Bendahara Penerimaan</td>
-    <td class="tengah">Tgl 21 s.d. 26</td>
-    <td class="tengah"> {% if page.sLPJBP == "Sudah" %}
-      <button class="btn green">Sudah</a>  {% endif %}
-      {% if page.sLPJBP == "Belum" %}
-      <button class="btn yellow">Belum</a>  {% endif %}
-      {% if page.sLPJBP == "Telat" %}
-      <button class="btn Red">Telat</a>  {% endif %} </td>
-  </tr>
-  <tr>
-    <td class="tengah">06</td>
-    <td>Rekonsiliasi Eksternal</td>
-    <td class="tengah">Tgl 21 s.d. 26</td>
-    <td class="tengah"> {% if page.sREKON == "Sudah" %}
-      <button class="btn green">Sudah</a>  {% endif %}
-      {% if page.sREKON == "Belum" %}
-      <button class="btn yellow">Belum</a>  {% endif %}
-      {% if page.sREKON == "Telat" %}
-      <button class="btn Red">Telat</a>  {% endif %} </td>
-  </tr>
-</table>
+<h1 class="tengah">
+  {{ page.title }}
+</h1>
+
+  <table class="table">
+    <tr>
+      <th>No</th>
+      <th class="kiri">Jenis Kegiatan</th>
+      <th>Batas Akhir</th>
+      <th>Status</th>
+    </tr>
+    <tr>
+      <td class="tengah">01</td>
+      <td>SPM Gaji Induk PNS</td>
+      <td class="tengah">Tgl 1 s.d. 15</td>
+      <td class="tengah">
+          {% if page.sGJIND == "SUDAH" %} <button class="bgcolor1">SUDAH</button>  {% endif %}
+          {% if page.sGJIND == "BELUM" %} <button class="bgcolor2">BELUM</button>  {% endif %}
+          {% if page.sGJIND == "TELAT" %} <button class="bgcolor3">TELAT</button>  {% endif %}
+          {% if page.sGJIND == "TIDAK" %} <button class="bgcolor4">TIDAK</button>  {% endif %}
+      </td>
+    </tr>
+    <tr>
+      <td class="tengah">02</td>
+      <td>SPM Penghasilan PPNPN</td>
+      <td class="tengah">Tgl 21 s.d. 26</td>
+      <td class="tengah">
+          {% if page.sPPNPN == "SUDAH" %} <button class="bgcolor1">SUDAH</button>  {% endif %}
+          {% if page.sPPNPN == "BELUM" %} <button class="bgcolor2">BELUM</button>  {% endif %}
+          {% if page.sPPNPN == "TELAT" %} <button class="bgcolor3">TELAT</button>  {% endif %}
+          {% if page.sPPNPN == "TIDAK" %} <button class="bgcolor4">TIDAK</button>  {% endif %}
+      </td>
+    </tr>
+    <tr>
+      <td class="tengah">03</td>
+      <td>Laporan Saldo Rekening</td>
+      <td class="tengah">Tgl 21 s.d. 26</td>
+      <td class="tengah">
+        {% if page.sLSREK == "SUDAH" %} <button class="bgcolor1">SUDAH</button>  {% endif %}
+        {% if page.sLSREK == "BELUM" %} <button class="bgcolor2">BELUM</button>  {% endif %}
+        {% if page.sLSREK == "TELAT" %} <button class="bgcolor3">TELAT</button>  {% endif %}
+        {% if page.sLSREK == "TIDAK" %} <button class="bgcolor4">TIDAK</button>  {% endif %}
+      </td>
+    </tr>
+    <tr>
+      <td class="tengah">04</td>
+      <td>LPJ Bendahara Pengeluaran</td>
+      <td class="tengah">Tgl 21 s.d. 26</td>
+      <td class="tengah"> 
+        {% if page.sLPJBD == "SUDAH" %} <button class="bgcolor1">SUDAH</button>  {% endif %}
+        {% if page.sLPJBD == "BELUM" %} <button class="bgcolor2">BELUM</button>  {% endif %}
+        {% if page.sLPJBD == "TELAT" %} <button class="bgcolor3">TELAT</button>  {% endif %}
+        {% if page.sLPJBD == "TIDAK" %} <button class="bgcolor4">TIDAK</button>  {% endif %}
+      </td>
+    </tr>
+    <tr>
+      <td class="tengah">05</td>
+      <td>LPJ Bendahara Penerimaan</td>
+      <td class="tengah">Tgl 21 s.d. 26</td>
+      <td class="tengah">
+        {% if page.sLPJBP == "SUDAH" %} <button class="bgcolor1">SUDAH</button>  {% endif %}
+        {% if page.sLPJBP == "BELUM" %} <button class="bgcolor2">BELUM</button>  {% endif %}
+        {% if page.sLPJBP == "TELAT" %} <button class="bgcolor3">TELAT</button>  {% endif %}
+        {% if page.sLPJBP == "TIDAK" %} <button class="bgcolor4">TIDAK</button>  {% endif %}
+      </td>
+    </tr>
+    <tr>
+      <td class="tengah">06</td>
+      <td>Rekonsiliasi Eksternal</td>
+      <td class="tengah">Tgl 21 s.d. 26</td>
+      <td class="tengah">
+        {% if page.sREKON == "SUDAH" %} <button class="bgcolor1">SUDAH</button>  {% endif %}
+        {% if page.sREKON == "BELUM" %} <button class="bgcolor2">BELUM</button>  {% endif %}
+        {% if page.sREKON == "TELAT" %} <button class="bgcolor3">TELAT</button>  {% endif %}
+        {% if page.sREKON == "TIDAK" %} <button class="bgcolor4">TIDAK</button>  {% endif %}
+      </td>
+    </tr>
+  </table>
+
+
 
 {{ content }}

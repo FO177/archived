@@ -1,7 +1,0 @@
-<header class="page-nav">
-<h2>
-  {% for item in site.data.nav %}
-     <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.judul }}</a>     |
-  {% endfor %}
-</h2>
-</header>

@@ -1,3 +1,10 @@
-<header>
-    <h1> {{ site.title }} </h1>
+<header class="page-header" role="banner">
+  <h1 class="project-name">INFO HARIAN SATKER</h1>
+<br>
+  {% if site.show_nav %}
+    <a href="{{ site.menu0 }}" class="btn">Beranda</a>
+    <a href="{{ site.menu1 }}" class="btn">/Status</a>
+    <a href="{{ site.menu2 }}" class="btn">/Tulisan</a>
+    <a href="{{ site.menu3 }}" class="btn">/Download</a>
+  {% endif %}
 </header>

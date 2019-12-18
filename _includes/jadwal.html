@@ -1,0 +1,18 @@
+
+<h1 class="txt-dark-gray">#JADWAL</h1>
+  <table class="table">
+    <tr>
+      <th class="tengah">No</th>
+      <th class="kiri">Jenis Kegiatan</th>
+      <th class="tengah">Jadwal</th>
+      <th class="tengah">Info Lengkap</th>
+    </tr>
+    {% for jadwal in site.data.jadwals %}
+    <tr>
+      <td class="tengah"> {{ jadwal.nomor }} </td>
+      <td> {{ jadwal.tugas }} </td>
+      <td class="tengah"> {{ jadwal.waktu }} </td>
+      <td class="tengah"><button class="bgcolor5">{{ jadwal.petunjuk }}</button></td>
+    </tr>
+    {% endfor %}
+    </table>

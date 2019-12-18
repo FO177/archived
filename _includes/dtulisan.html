@@ -1,0 +1,9 @@
+<h1 class="txt-dark-gray">#TULISAN TERBARU</h1>
+<ul>
+    {% for post in site.posts limit:5 %}
+      <li>
+        <h2> [{{ post.categories }}] <a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <p>{{ post.excerpt }}</p>
+      </li>
+    {% endfor %}
+  </ul>

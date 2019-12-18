@@ -60,6 +60,10 @@ a {
     text-decoration: underline;
   }
 }
+.aun {
+
+    text-decoration: underline;
+}
 
 .btn {
   display: inline-block;
@@ -105,7 +109,7 @@ a {
   }
 }
 
-.bgcolor1, .bgcolor2, .bgcolor3, .bgcolor4 { 
+.bgcolor1, .bgcolor2, .bgcolor3, .bgcolor4, .bgcolor5 { 
   display: inline-block;
   border-color: rgba(255, 255, 255, 0.2);
   border-style: solid;
@@ -152,6 +156,10 @@ a {
 }
 .bgcolor4 {
   background-color: $button-bg-color4;
+  color: $button-txt-color;
+}
+.bgcolor5 {
+  background-color: $button-bg-color5;
   color: $button-txt-color;
 }
 
@@ -201,7 +209,7 @@ a {
 }
 .project-name {
   margin-top: 0;
-  margin-bottom: 0.1rem;
+  margin-bottom: 0rem;
 
   @include large {
     font-size: 3.25rem;
@@ -217,8 +225,7 @@ a {
 }
 
 .project-tagline {
-  margin-bottom: 2rem;
-  font-weight: normal;
+  margin-bottom: 0.1rem;
   opacity: 0.7;
 
   @include large {
@@ -282,14 +289,13 @@ a {
   h4,
   h5,
   h6 {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.1rem;
     font-weight: normal;
-    color: $section-headings-color;
   }
 
   p {
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
   }
 
   code {
@@ -424,8 +430,18 @@ a {
 .kiri {
   text-align: left;
 }
+.kanan {
+  text-align: right;
+}
+.tebal {
+  font-weight: bold; ;
+}
 
-/*!LOTUS*/
+.bawah {
+  text-decoration: underline;
+}
+
+/*!LOTUS - Table*/
 .table{
   border-collapse:collapse;
   border-spacing:0;width:100%
@@ -435,4 +451,121 @@ a {
 }
 .table tbody>:nth-child(2n-1){
   background-color:#e2e5e9
+}
+/*!LOTUS - Grid*/
+.row{
+  margin-left:-1.25em
+}
+.col,.col-sm,.col-lg{
+  background-clip:content-box;
+  box-sizing:border-box;
+  display:inline-block;
+  margin-right:-.25em;
+  min-height:1px;
+  padding-left:1.25em;
+  position:relative;
+  vertical-align:top
+}
+.no-gutter{
+  padding-left:.25em}
+.c12{
+  width:100%
+}
+.c11{
+  width:91.66%
+}
+.c10{
+  width:83.33%
+}
+.c9{
+  width:75%
+}
+.c8{
+  width:66.66%
+}
+.c7{
+  width:58.33%
+}
+.c6{
+  width:50%
+}
+.c5{
+  width:41.66%
+}
+.c4{
+  width:33.33%
+}
+.c3{
+  width:25%
+}
+.c2{
+  width:16.66%
+}
+.c1{
+  width:8.33%
+}
+@media (max-width:55em){
+  .col-lg{
+    width:100%;
+    margin-bottom:1.25em
+  }
+}
+@media (max-width:30em){
+  .col{
+    width:100%;
+    margin-bottom:1.25em
+  }
+}
+
+/*!LOTUS - Color*/
+.bg-dark-gray{
+  background-color:#a8b2bd
+}
+.bg-light-gray{
+  background-color:#e2e5e9
+}
+.bg-red{
+  background-color:#ff7772
+}
+.bg-green{
+  background-color:#67ba72
+}
+.bg-blue{
+  background-color:#70bde6
+}
+.bg-yellow{
+  background-color:#ffdd69
+}
+.bg-magenta{
+  background-color:#bf75ff
+}
+.bg-cyan{
+  background-color:#92f9f6
+}
+.bg-black{
+  background-color:#353535
+}
+.txt-dark-gray{
+  color:#a8b2bd
+}
+.txt-light-gray{
+  color:#e2e5e9
+}
+.txt-red{
+  color:#ff7772
+}
+.txt-green{
+  color:#67ba72
+}
+.txt-blue{
+  color:#70bde6
+}
+.txt-yellow{
+  color:#ffdd69
+}
+.txt-magenta{
+  color:#bf75ff
+}
+.txt-cyan{
+  color:#92f9f6
 }

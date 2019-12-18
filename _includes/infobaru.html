@@ -1,1 +1,10 @@
-<h1>Info Baru: Coming Soon</h1>
+
+<h1 class="txt-dark-gray"> #INFO TERBARU </h1>
+<ul>
+    {% for info in site.data.infos %}
+      <li>
+        <h2> <a class="aun" href="{{ info.link }}">{{ info.judul }}</a> </h2>
+        <p> {{ info.lengkap }} </p>
+      </li>
+    {% endfor %}
+  </ul>

@@ -36,7 +36,8 @@ show_nav: true
 menu0: /
 menu1: /status
 menu2: /tulisan
-menu3: /download
+menu3: /format
+menu4: /download
 show_downloads: true
 
 

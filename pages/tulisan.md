@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: tulisan
 title: Ini Halaman Tulisan
 permalink: /tulisan/
 ---

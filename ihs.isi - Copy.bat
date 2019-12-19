@@ -227,38 +227,52 @@ echo  # Menu Ubah Data Satker: Tambah Data Satker#
 echo ------------------------------------------------------------
 echo.
 echo  Petunjuk:
-echo  1. Masukan Nomor BA
-echo  2. Masukan Kode Satker
-echo  3. Masukan Nama Satker
-echo  4. Cek Data
-echo     Untuk batal, input 0
+echo  1. Masukan Kode Satker
+echo  2. Masukan Nama Satker
+echo  3. Cek Data
 echo     Jika Salah, Silahkan Ubah
 echo     Jika Benar, Silahkan Setujui
 echo.
-set /p nomorba= [Nomor BA]    : 
-set /p kdstkr=  [Kode Satker] : 
-set /p nmstkr=  [Nama Satker] : 
+set /p kdstkr= [Kode Satker]: 
+set /p nmstkr= [Nama Satker]: 
 echo.
 echo  Anda akan menambah:
 echo. 
-echo  Kode Satker: "%kdstkr%" dengan Nama Satker: "%nmstkr%" pada database BA "%nomorba%"
+echo  Kode Satker: "%kdstkr%" dengan Nama Satker: "%nmstkr%"
 echo.
-set /p menu320= Tekan 1 jika benar, tekan 0 jika ingin kembali ke menu sebelumnya.
+set /p menu320= Tekan 1 jika benar, tekan 0 jika ingin mengubah:
 IF %menu320%==1 (goto :menu32x)
-IF %menu320%==0 (goto :menu300)
+IF %menu320%==0 (goto :menu320)
 echo ---------------batas-sub-sub-menu-----
 
 :menu32x
 echo %kdstkr% %nmstkr% >> datasatker.txt
-
-echo - kdstkr: %kdstkr% >> _data\b%nomorba%as.yml
-echo   nmstkr: Pengadilan Negeri Sinjai >> _data\b%nomorba%as.yml
-echo.
 echo Data Sudah Ditambah...
-echo {Klik ENTER}
+PAUSE >> tmp.tmp
+goto :menu322
+echo ---------------batas-sub-sub-menu-----
+
+:menu322
+cls
+echo.
+echo   IHS-ISI.bat [versi 0.1]
+echo ------------------------------------------------------------
+echo  # Menu Ubah Data Satker: Tambah Data Satker#
+echo ------------------------------------------------------------
+echo.
+echo  Anda sudah menambah data satker, silahkan cek di bawah:
+echo.
+echo  ---Awal Data Satker---
+echo.
+echo kode   nama satker
+echo ------ ------------
+type datasatker.txt
+echo.
+echo  ---Akhir Data Satker---
+echo. 
+echo Tekan Enter untuk Kembali..
 PAUSE >> tmp.tmp
 goto :menu300
-echo ---------------batas-sub-sub-menu-----
 
 :menu330
 cls

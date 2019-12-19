@@ -5,6 +5,7 @@ layout: default
 <h2>
   BA 005: Mahkamah Agung Indonesia
 </h2>
+
 <ul>
     {% for b005a in site.data.b005as %}
       <li>
@@ -13,4 +14,30 @@ layout: default
         </a>
       </li>
     {% endfor %}
-    </ul>
+</ul>
+
+<h2>
+  BA 006: KEJAKSAAN
+</h2>
+<ul>
+  {% for b006a in site.data.b006as %}
+    <li>
+      <a href="./{{ b006a.kdstkr }}">
+          {{ b006a.kdstkr }} {{ b006a.nmstkr }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
+<h2>
+  BA 025: KEMENTERIAN AGAMA
+</h2>
+<ul>
+  {% for b025a in site.data.b025as %}
+    <li>
+      <a href="./{{ b025a.kdstkr }}">
+          {{ b025a.kdstkr }} {{ b025a.nmstkr }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>

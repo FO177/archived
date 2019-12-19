@@ -257,6 +257,7 @@ echo.
 echo Data Sudah Ditambah...
 echo {Klik ENTER}
 PAUSE >> tmp.tmp
+del tmp.tmp
 goto :menu300
 echo ---------------batas-sub-sub-menu-----
 
@@ -414,7 +415,7 @@ echo  KELUAR ######################
 echo ------------------------------
 TIMEOUT /T 1 >> tmp.tmp
 
-del >> tmp.tmp
+del tmp.tmp
 exit
 echo ------------------------------batas-menu----------------------------------------------------------------------
 

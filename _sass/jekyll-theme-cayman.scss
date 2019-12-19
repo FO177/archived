@@ -203,7 +203,7 @@ a {
 .page-pos {
   text-align: center;
   background-color: $header-nav-color;
-  @include large medium small {
+  @include large{
     padding: 0.2rem;
   }
 }
